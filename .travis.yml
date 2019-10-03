@@ -3,3 +3,9 @@ python:
   - "2.7"
 install: skip
 script: python ./src/hello.py
+matrix:
+  include:
+    - arch: arm64
+      os: linux
+    - arch: amd64
+      os: linux
