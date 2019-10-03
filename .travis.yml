@@ -1,6 +1,7 @@
 arch:
   - arm64
   - amd64
+os: linux
 language: python
 python:
   - "2.7"
