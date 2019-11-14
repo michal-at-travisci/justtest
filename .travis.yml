@@ -1,6 +1,9 @@
 language: python
-python:
-  - "2.7"
-  - "3.6"
+python: "2.7"
 install: skip
 script: python ./src/hello.py
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+      python: "3.6"
