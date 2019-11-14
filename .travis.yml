@@ -1,8 +1,16 @@
 language: python
-python: "2.7"
 arch:
   - arm64 # ARMv8 
   - amd64
 install: skip
 script: python ./src/hello.py
-
+jobs:
+  include:
+   - os: linux
+     arch: arm64 # ARMv8
+     dist: bionic
+     python: "3.6"
+   - os: linux
+     arch: arm64 #
+     python: "2.7"
+     dist: xenial
