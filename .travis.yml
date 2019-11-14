@@ -1,9 +1,7 @@
 language: python
 python: "2.7"
 arch:
-  - arm64 #ARM v8 
-  - ppc64le #IBM Power
-  - s390x # . IBM Z
+  - arm64 #ARMv8 
   - amd64
 install: skip
 script: python ./src/hello.py
