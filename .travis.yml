@@ -1,7 +1,7 @@
 language: python
 python: "2.7"
 arch:
-  - arm64 #ARMv8 
+  - arm64 # ARMv8 
   - amd64
 install: skip
 script: python ./src/hello.py
