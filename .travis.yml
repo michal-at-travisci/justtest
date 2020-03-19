@@ -5,9 +5,10 @@ script: python ./src/hello.py
 jobs:
   include:
    - os: freebsd
-     python: "3.6"
      script:
       - uname -a
       - kenv
       - env
+   - os: freebsd
+     python: "3.6"
 
