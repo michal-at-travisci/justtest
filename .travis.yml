@@ -7,4 +7,8 @@ jobs:
    - os: freebsd
      dist: 12.1
      python: "3.6"
+     script:
+      - uname -a
+      - kenv
+      - env
 
