@@ -21,6 +21,5 @@ jobs:
      language: cpp
      compiler: gcc
      script:
-       - pwd
-       - chmod +x ./buildscripts/build.sh && /buildscripts/build.sh
+       - chmod +x ./buildscripts/cpp-build.sh && /buildscripts/cpp-build.sh
 
