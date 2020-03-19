@@ -4,14 +4,7 @@ script: python ./src/hello.py
 
 jobs:
   include:
-   - os: linux
-     arch: arm64 # ARMv8
-     dist: bionic
-     language: python
+   - os: freebsd
+     dist: 12.1
      python: "3.6"
-   - os: linux
-     arch: arm64 # ARMv8
-     language: python
-     python: "2.7"
-     dist: xenial
 
