@@ -20,5 +20,7 @@ jobs:
    - os: freebsd
      language: cpp
      compiler: gcc
-     script: chmod +x ./buildscripts/build.sh && /buildscripts/build.sh
+     script:
+       - pwd
+       - chmod +x ./buildscripts/build.sh && /buildscripts/build.sh
 
