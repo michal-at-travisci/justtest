@@ -1,11 +1,12 @@
 
 install: skip
-script: python ./src/hello.py
 
 jobs:
   include:
    - os: linux #for comparison
      dist: bionic
+     python: "3.6"
+     script: python ./src/hello.py
    - os: freebsd
      script:
       - uname -a
@@ -13,4 +14,5 @@ jobs:
       - env
    - os: freebsd
      python: "3.6"
+     script: python ./src/hello.py
 
