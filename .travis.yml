@@ -5,14 +5,20 @@ jobs:
   include:
    - os: linux #for comparison
      dist: bionic
+     language: python
      python: "3.6"
      script: python ./src/hello.py
-   - os: freebsd
+   - os: freebsd #for identification
      script:
       - uname -a
       - kenv
       - env
    - os: freebsd
+     language: python
      python: "3.6"
      script: python ./src/hello.py
+   - os: freebsd
+     language: cpp
+     compiler: gcc
+     script: chmod +x ./buildscripts/build.sh && /buildscripts/build.sh
 
