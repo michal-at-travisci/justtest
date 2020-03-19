@@ -4,6 +4,8 @@ script: python ./src/hello.py
 
 jobs:
   include:
+   - os: linux #for comparison
+     dist: bionic
    - os: freebsd
      script:
       - uname -a
