@@ -5,7 +5,7 @@ script: python ./src/hello.py
 jobs:
   include:
      - dist: focal
-       script:
+       before_install:
          - echo "git version: $(git --version)"
          - echo "git lfs version: $(git lfs --version)"
          - echo "hg lfs version: $(hg --version)"
