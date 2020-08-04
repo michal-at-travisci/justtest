@@ -8,10 +8,9 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "ppa:chris-lea/redis-server"
+            - sourceline: 'https://apache.bintray.com/couchdb-deb'
           packages:
-            - redis-tools
-            - redis-server
+            - couchdb
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
