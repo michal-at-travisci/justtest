@@ -8,7 +8,7 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "google-chrome"
+            - sourceline: "deb http://dl.google.com/linux/chrome/deb/ stable main"
           packages:
             - google-chrome-stable
 #    - dist: focal
