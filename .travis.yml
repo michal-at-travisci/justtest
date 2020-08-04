@@ -5,6 +5,7 @@ script: python ./src/hello.py
 jobs:
   include:
     - dist: focal
+      virt: lxd
       python: "2.7"
     - dist: focal
       python: "3.6"
