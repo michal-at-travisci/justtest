@@ -8,9 +8,9 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "github-git-lfs-bionic"
+            - sourceline: "google-chrome"
           packages:
-            - git-lfs
+            - google-chrome-stable
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
