@@ -8,7 +8,7 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "docker-focal"
+            - sourceline: "deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
           packages:
             - docker
 #    - dist: focal
