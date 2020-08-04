@@ -5,10 +5,17 @@ script: python ./src/hello.py
 jobs:
   include:
     - dist: focal
-      virt: lxd
-      python: "2.7"
-    - dist: focal
-      python: "3.6"
+      addons:
+        apt:
+          sources:
+            - ppa:chris-lea/redis-server
+          packages:
+            - redis-tools
+            - redis-server
+#    - dist: focal
+#      python: "2.7"
+#    - dist: focal
+#      python: "3.6"
 #   - os: linux
 #     arch: arm64 # ARMv8
 #     dist: bionic
