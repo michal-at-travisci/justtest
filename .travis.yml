@@ -8,9 +8,9 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "deb http://dl.google.com/linux/chrome/deb/ stable main"
+            - sourceline: "deb https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/4.4 multiverse"
           packages:
-            - google-chrome-stable
+            - mongodb
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
