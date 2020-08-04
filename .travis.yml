@@ -8,9 +8,9 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "deb https://apache.bintray.com/couchdb-deb focal main"
+            - sourceline: "docker-focal"
           packages:
-            - couchdb
+            - docker
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
