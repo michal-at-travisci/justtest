@@ -8,9 +8,9 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "deb https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+            - sourceline: "github-git-lfs-focal"
           packages:
-            - docker
+            - git-lfs
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
