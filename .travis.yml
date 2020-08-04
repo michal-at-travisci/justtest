@@ -8,7 +8,7 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: 'https://apache.bintray.com/couchdb-deb'
+            - sourceline: "https://apache.bintray.com/couchdb-deb"
           packages:
             - couchdb
 #    - dist: focal
