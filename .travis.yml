@@ -4,10 +4,16 @@ script: python ./src/hello.py
 
 jobs:
   include:
-    - dist: focal
-      services:
-        - redis
-        - mysql
+     - dist: focal
+       script:
+         - echo "git version: $(git --version)"
+         - echo "git lfs version: $(git lfs --version)"
+         - echo "hg lfs version: $(hg --version)"
+         - echo "svn lfs version: $(svn --version)"
+#    - dist: focal
+#      services:
+#        - redis
+#        - mysql
 #    - dist: focal
 #      addons:
 #        apt:
