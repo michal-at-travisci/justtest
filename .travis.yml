@@ -5,12 +5,16 @@ script: python ./src/hello.py
 jobs:
   include:
     - dist: focal
-      addons:
-        apt:
-          sources:
-            - sourceline: "deb https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/4.4 multiverse"
-          packages:
-            - mongodb
+      services:
+        - redis
+        - mysql
+#    - dist: focal
+#      addons:
+#        apt:
+#          sources:
+#            - sourceline: "deb https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/4.4 multiverse"
+#          packages:
+#            - mongodb
 #    - dist: focal
 #      python: "2.7"
 #    - dist: focal
