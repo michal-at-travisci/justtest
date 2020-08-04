@@ -8,7 +8,7 @@ jobs:
       addons:
         apt:
           sources:
-            - sourceline: "github-git-lfs-focal"
+            - sourceline: "github-git-lfs-bionic"
           packages:
             - git-lfs
 #    - dist: focal
