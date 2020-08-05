@@ -10,6 +10,8 @@ jobs:
          - git lfs --version
          - hg --version
          - svn --version
+         - clang --version
+         - llvm-config --version
 #    - dist: focal
 #      services:
 #        - redis
