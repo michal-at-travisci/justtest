@@ -6,7 +6,7 @@ jobs:
   include:
      - dist: focal
        before_install:
-         - dpkg-query -l | less
+         - apt list --installed
 #    - dist: focal
 #      services:
 #        - redis
