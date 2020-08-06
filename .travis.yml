@@ -7,7 +7,7 @@ jobs:
      - dist: focal
        before_install:
          - apt list --installed
-         - service --status-all | grep '\[ + \]'
+         - systemctl list-units --type=service --state=active
 #    - dist: focal
 #      services:
 #        - redis
