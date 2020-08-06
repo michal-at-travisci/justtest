@@ -6,8 +6,11 @@ jobs:
   include:
      - dist: focal
        before_install:
-         - apt list --installed
-         - apt-cache search .
+#         - apt list --installed
+         - apt-cache search go
+         - apt-cache search golang
+         - apt-cache search hg
+         - apt-cache search mercurial
 
 #    - dist: focal
 #      services:
