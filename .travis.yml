@@ -12,6 +12,7 @@ jobs:
          - svn --version
          - clang --version
          - llvm-config --version
+         - apt list --installed
 #    - dist: focal
 #      services:
 #        - redis
