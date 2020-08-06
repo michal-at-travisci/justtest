@@ -6,6 +6,7 @@ jobs:
   include:
      - dist: focal
        before_install:
+         - dpkg-query -l
          - git --version
          - git lfs --version
          - hg --version
