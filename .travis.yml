@@ -6,7 +6,6 @@ jobs:
   include:
      - dist: focal
        before_install:
-         - $ dpkg-query -s git
          - dpkg-query -s vim
 #    - dist: focal
 #      services:
