@@ -12,7 +12,15 @@ jobs:
          - svn --version
          - clang --version
          - llvm-config --version
-         - apt list --installed
+         - apt list couchdb
+         - apt list docker
+         - apt list google-chrome-stable	
+         - apt list git-lfs
+         - apt list git-ppa
+         - apt list haskell
+         - apt list mongodb
+         - apt list pollinate
+         - apt list redis
 #    - dist: focal
 #      services:
 #        - redis
