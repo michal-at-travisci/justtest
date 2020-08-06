@@ -6,7 +6,8 @@ jobs:
   include:
      - dist: focal
        before_install:
-         - sudo dpkg-query -l | less
+         - $ dpkg-query -s git
+         - dpkg-query -s vim
 #    - dist: focal
 #      services:
 #        - redis
