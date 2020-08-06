@@ -6,31 +6,7 @@ jobs:
   include:
      - dist: focal
        before_install:
-         - dpkg-query -l
-         - git --version
-         - git lfs --version
-         - hg --version
-         - svn --version
-         - clang --version
-         - llvm-config --version
-         - apt list couchdb
-         - apt-cache policy couchdb
-         - apt list docker
-         - apt-cache policy docker
-         - apt list google-chrome-stable
-         - apt-cache policy google-chrome-stable
-         - apt list git-lfs
-         - apt-cache policy git-lfs
-         - apt list git-ppa
-         - apt-cache policy git-ppa
-         - apt list haskell
-         - apt-cache policy haskell
-         - apt list mongodb
-         - apt-cache policy mongodb
-         - apt list pollinate
-         - apt-cache policy pollinate
-         - apt list redis
-         - apt-cache policy redis
+         - dpkg-query -l | less
 #    - dist: focal
 #      services:
 #        - redis
