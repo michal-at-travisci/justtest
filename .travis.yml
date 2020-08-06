@@ -7,33 +7,8 @@ jobs:
      - dist: focal
        before_install:
          - apt list --installed
-         - apt-cache policy git
-         - apt-cache policy git-lfs
-         - apt-cache policy hg
-         - apt-cache policy mercurial
-         - apt-cache policy svn
-         - apt-cache policy clang
-         - apt-cache policy llvm
-         - apt-cache policy cmake
-         - apt-cache policy ccache
-         - apt-cache policy shellcheck 
-         - apt-cache policy shfmt 
-         - apt-cache policy docker 
-         - apt-cache policy docker-compose
-         - apt-cache policy ruby
-         - apt-cache policy python
-         - apt-cache policy node
-         - apt-cache policy nodejs
-         - apt-cache policy golang
-#        - apt-cache policy pre-installed JVMs ?
-         - apt-cache policy gradle
-         - apt-cache policy maven
-         - apt-cache policy groovy
-         - apt-cache policy php
-         - apt-cache policy mongodb
-#        - apt-cache policy mysql ?
-         - apt-cache policy redis
-         - apt-cache policy postgresql
+         - apt-cache search .
+
 #    - dist: focal
 #      services:
 #        - redis
