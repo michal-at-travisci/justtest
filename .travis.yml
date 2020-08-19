@@ -4,17 +4,18 @@ script: python ./src/hello.py
 
 jobs:
   include:
-     - dist: focal
-       services: mongodb
-       script: mongod --version
 #     - dist: focal
-#       before_install:
-#         - git --version
-#         - git lfs --version
-#         - hg --version
-#         - svn --version
-#         - clang --version
-#         - llvm-config --version
+#       services: mongodb
+#       script: mongod --version
+     - dist: focal
+         before_install:
+         - cmake --version
+         - git --version
+         - git lfs --version
+         - hg --version
+         - svn --version
+         - clang --version
+         - llvm-config --version
 #    - dist: focal
 #      services:
 #        - redis
