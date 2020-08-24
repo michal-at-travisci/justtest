@@ -2,9 +2,9 @@ arch:
   - arm64-graviton2
 os: windows
   
-language: python
+language: cpp
 install: skip
-script: python ./src/hello.py
+script: python ./src/hello.cpp
 
 jobs:
 #  include:
