@@ -1,16 +1,23 @@
+arch:
+  - arm64-graviton2
+os: linux
 language: python
 install: skip
 script: python ./src/hello.py
 
 jobs:
   include:
-     - dist: focal
-     - arch: arm64-graviton2
-       before_install:
-         - dpkg-query -s git
+   - os: linux
+     arch: arm64-graviton2
+#jobs:
+#  include:
+#     - dist: xenial
+#     - arch: arm64-graviton2
+#       before_install:
+#         - dpkg-query -s git
 #         - dpkg-query -s mysql ?
-         - dpkg-query -s redis
-         - dpkg-query -s postgresql
+#         - dpkg-query -s redis
+#         - dpkg-query -s postgresql
 #    - dist: focal
 #      services:
 #        - redis
