@@ -1,11 +1,13 @@
 language: python
 install: skip
-#script: python ./src/hello.py
+script: python ./src/hello.py
 
 jobs:
   include:
    - arch: arm64-graviton2
-   - script: python ./src/hello.py
+   - os: linux
+   - dist: focal
+   - virt: lxd
 #jobs:
 #  include:
 #     - dist: xenial
