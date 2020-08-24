@@ -4,7 +4,7 @@ install: skip
 
 jobs:
   include:
-   - arch: arm64-graviton22
+   - arch: arm64-graviton2
    - script: python ./src/hello.py
 #jobs:
 #  include:
