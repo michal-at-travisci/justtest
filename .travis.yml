@@ -4,6 +4,10 @@ script: python ./src/hello.py
 
 jobs:
   include:
+     - language: erlang
+       otp_release:
+         - "23.0.2"
+         - "22.3.4"
      - dist: focal
        before_install:
          - cmake --version
