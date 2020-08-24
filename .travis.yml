@@ -1,3 +1,6 @@
+os: lunux
+dist: bionic
+arch: arm64-graviton2
 language: python
 install: skip
 script: python ./src/hello.py
