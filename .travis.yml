@@ -1,4 +1,3 @@
-arch: arm64-graviton2
 language: python
 install: skip
 script: python ./src/hello.py
@@ -6,31 +5,9 @@ script: python ./src/hello.py
 jobs:
   include:
      - dist: focal
+     - arch: arm64-graviton2
        before_install:
          - dpkg-query -s git
-         - dpkg-query -s git-lfs
-         - dpkg-query -s hg
-         - dpkg-query -s mercurial
-         - dpkg-query -s svn
-         - dpkg-query -s clang
-         - dpkg-query -s llvm
-         - dpkg-query -s cmake
-         - dpkg-query -s ccache
-         - dpkg-query -s shellcheck 
-         - dpkg-query -s shfmt 
-         - dpkg-query -s docker 
-         - dpkg-query -s docker-compose
-         - dpkg-query -s ruby
-         - dpkg-query -s python
-         - dpkg-query -s node
-         - dpkg-query -s nodejs
-         - dpkg-query -s golang
-#         - dpkg-query -s pre-installed JVMs ?
-         - dpkg-query -s gradle
-         - dpkg-query -s maven
-         - dpkg-query -s groovy
-         - dpkg-query -s php
-         - dpkg-query -s mongodb
 #         - dpkg-query -s mysql ?
          - dpkg-query -s redis
          - dpkg-query -s postgresql
