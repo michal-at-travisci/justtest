@@ -1,6 +1,3 @@
-arch:
-  - arm64-graviton2
-os: linux
 language: python
 install: skip
 script: python ./src/hello.py
@@ -9,6 +6,7 @@ jobs:
   include:
    - os: linux
      arch: arm64-graviton2
+   - script: python ./src/hello.py
 #jobs:
 #  include:
 #     - dist: xenial
