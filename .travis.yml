@@ -1,8 +1,6 @@
-root: 
-  - os: linux
-  - dist: focal
-  - virt: lxd
-  - arch: arm64-graviton2
+arch:
+  - arm64-graviton2
+dist: focal
   
 language: python
 install: skip
