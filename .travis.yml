@@ -4,7 +4,7 @@ os: windows
   
 language: cpp
 install: skip
-script: python ./src/hello.cpp
+script: cpp ./src/hello.cpp
 
 jobs:
 #  include:
