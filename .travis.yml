@@ -8,6 +8,8 @@ jobs:
        otp_release:
          - "23.0.2"
          - "22.3.4"
+       before_install:
+         - kerl list installations
      - dist: focal
        before_install:
          - cmake --version
