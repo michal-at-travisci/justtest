@@ -5,6 +5,11 @@ arch: ppc64le
 
 jobs:
   include:
+     - os: linux
+       arch: arm64 # ARMv8
+       dist: bionic
+       language: python
+       python: "3.6"
      - language: erlang
        otp_release:
          - "23.0.2"
@@ -38,11 +43,6 @@ jobs:
 #      python: "2.7"
 #    - dist: focal
 #      python: "3.6"
-   - os: linux
-     arch: arm64 # ARMv8
-     dist: bionic
-     language: python
-     python: "3.6"
 #   - os: linux
 #     arch: arm64 # ARMv8
 #     language: python
