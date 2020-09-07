@@ -6,6 +6,12 @@ arch: ppc64le
 jobs:
   include:
      - os: linux
+       arch: amd64
+       virt: lxd
+       dist: bionic
+       language: python
+       python: "3.6"
+     - os: linux
        arch: arm64 # ARMv8
        dist: bionic
        language: python
