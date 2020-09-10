@@ -6,11 +6,12 @@ arch: ppc64le
 jobs:
   include:
      - os: linux
-       arch: amr64-graviton2
+       dist: focal
+       arch: arm64-graviton2
        virt: vm
        group: edge
      - os: linux
-       arch: amr64-graviton2
+       arch: arm64-graviton2
        virt: lxd
        group: edge
      - os: linux
