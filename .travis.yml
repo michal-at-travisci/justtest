@@ -8,9 +8,11 @@ jobs:
      - os: linux
        arch: amr64-graviton2
        virt: vm
+       group: edge
      - os: linux
        arch: amr64-graviton2
        virt: lxd
+       group: edge
      - os: linux
        arch: amd64
        virt: lxd
