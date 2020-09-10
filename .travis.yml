@@ -35,7 +35,7 @@ jobs:
        before_install:
          - cmake --version
          - git --version
-         - git lfs --help
+         - git --help
          - hg --version
          - svn --version
          - clang --version
