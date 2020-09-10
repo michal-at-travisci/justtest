@@ -9,11 +9,9 @@ jobs:
        dist: focal
        arch: arm64-graviton2
        virt: vm
-       group: edge
      - os: linux
        arch: arm64-graviton2
        virt: lxd
-       group: edge
      - os: linux
        arch: amd64
        virt: lxd
