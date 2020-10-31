@@ -1,7 +1,7 @@
 language: python
 install: skip
 script: python ./src/hello.py
-# arch: ppc64le
+# arch: ppc64le 
 
 jobs:
   include:
