@@ -6,6 +6,7 @@ script: python ./src/hello.py
 jobs:
   include:
      - os: osx
+       python: "2.7"
      - os: windows
      - os: freebsd
 #     - os: linux
