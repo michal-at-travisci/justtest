@@ -5,6 +5,16 @@ script: python ./src/hello.py
 
 jobs:
   include:
+     - dist: focal
+       before_install:
+         - lscpu
+         - free -h
+     - dist: focal
+       vm:
+         size: large
+       before_install:
+         - lscpu
+         - free -h
      - os: osx
        python: "2.7"
      - os: windows
@@ -35,15 +45,15 @@ jobs:
 #         - "22.3.4"
 #       before_install:
 #         - kerl list installations
-     - dist: focal
-       before_install:
-         - cmake --version
-         - git --version
-         - git --help
-         - hg --version
-         - svn --version
-         - clang --version
-         - llvm-config --version
+#     - dist: focal
+#       before_install:
+#         - cmake --version
+#         - git --version
+#         - git --help
+#         - hg --version
+#         - svn --version
+#         - clang --version
+#         - llvm-config --version
 #     - dist: focal
 #       services: mongodb
 #       script: mongod --version
