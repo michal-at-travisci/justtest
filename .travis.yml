@@ -1,6 +1,8 @@
 arch:
   - arm64-graviton2
-os: windows
+os: linux
+dist: focal
+virt: lxd
   
 language: cpp
 install: skip
