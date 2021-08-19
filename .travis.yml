@@ -8,12 +8,12 @@ jobs:
        before_install:
          - lscpu
          - free -h
-     - dist: focal
-       vm:
-         size: large
-       before_install:
-         - lscpu
-         - free -h
+     #- dist: focal
+     #  vm:
+     #    size: large
+     #  before_install:
+     #    - lscpu
+     #    - free -h
      - os: osx
        python: "2.7"
      - os: windows
