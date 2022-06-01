@@ -1,9 +1,21 @@
 arch:
   - arm64
   - amd64
+  - ppc64le
+  - s390x
 os: linux
 language: python
 python:
   - "2.7"
 install: skip
-script: python ./src/hello.py
+
+jobs:
+  include: 
+  - dist: bionic
+    script: "travis_wait 60 sleep 3600 &"
+  - dist: bionic
+    script: "travis_wait 60 sleep 3600"  #because travis_wait is managing to send a process to the background and onserving it there
+  - dist: focal
+    script: "travis_wait 60 sleep 3600 &"
+  - dist: focal
+    script: "travis_wait 60 sleep 3600"  #because travis_wait is managing to send a process to the background and onserving it there
