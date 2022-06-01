@@ -5,8 +5,5 @@ arch:
   - s390x
   - arm64
   - amd64
-env:
-  - SEND_TO_BG='travis_wait 60 sleep 3600 &' #sending travis_wait to the background, which sends sleep to the background... The whole purpose of travis_wait issuing lines to standard output artificially is now denied
-  - SEND_TO_BG='travis_wait 60 sleep 3600'  #because travis_wait is managing to send a process to the background and observing it there
 script:
-  - eval "$SEND_TO_BG"
+  - travis_wait 40 sleep 3600
