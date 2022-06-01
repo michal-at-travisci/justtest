@@ -4,18 +4,14 @@ arch:
   - ppc64le
   - s390x
 os: linux
-language: python
-python:
-  - "2.7"
-install: skip
 
 jobs:
   include: 
   - dist: bionic
-    script: "travis_wait 60 sleep 3600 &"
+    script: "travis_wait 60 sleep 3600 &" #sending travis_wait to the background, which sends sleep to the backgorund... The whole purpose of travis_wait issuing lines to standard output artificially is now denied
   - dist: bionic
-    script: "travis_wait 60 sleep 3600"  #because travis_wait is managing to send a process to the background and onserving it there
+    script: "travis_wait 60 sleep 3600"  #because travis_wait is managing to send a process to the background and observing it there
   - dist: focal
     script: "travis_wait 60 sleep 3600 &"
   - dist: focal
-    script: "travis_wait 60 sleep 3600"  #because travis_wait is managing to send a process to the background and onserving it there
+    script: "travis_wait 60 sleep 3600" 
