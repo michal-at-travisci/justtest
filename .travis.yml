@@ -1,8 +1,9 @@
 os: linux
 dist: bionic
 language: python
-python: 3.8
-node_js: 14
+python: "3.8"
+node_js: 
+ - "15"
 script:
   - python --version
   - node -v
