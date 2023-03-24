@@ -1,6 +1,8 @@
 language: python
 install: skip
-script: python ./src/hello.py
+script: 
+- cat ~/.ssh/config
+#- python ./src/hello.py
 # arch: ppc64le 
 jobs:
   include:
@@ -16,7 +18,7 @@ jobs:
      #    - free -h
      - os: osx
        python: "2.7"
-     - os: windows
+     #- os: windows
      - os: freebsd
      
      
