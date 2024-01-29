@@ -3,6 +3,9 @@ jobs:
      - os: windows
        language: c++
        script:
-         - ./src/test.bat
+         - cd ./src
+         - mkdir ./testdir
+         - cd ./testdir
+         - ../test.bat
        
 
