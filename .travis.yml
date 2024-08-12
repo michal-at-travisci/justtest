@@ -1,25 +1,45 @@
-language: python
-install: skip
-script: 
-- cat ~/.ssh/config
-#- python ./src/hello.py
-# arch: ppc64le 
+language: shell
+os: linux
+dist: 
+  - xenial
+stages:
+  name: test
 jobs:
   include:
-     - dist: focal
-       before_install:
-         - lscpu
-         - free -h
+    - name: job 1
+      if type = pull_request
+      script: 
+      - echo "Hello, job 1"
+    - name: job 2
+      if type = pull_request
+      script: 
+       - echo "Hello, job 2"
+
+script:
+  - echo "HEllo, root level job here"
+
+#language: python
+#install: skip
+#script: 
+#- cat ~/.ssh/config
+#- python ./src/hello.py
+# arch: ppc64le 
+#jobs:
+  #include:
+     #- dist: focal
+     #  before_install:
+     #    - lscpu
+     #    - free -h
      #- dist: focal
      #  vm:
      #    size: large
      #  before_install:
      #    - lscpu
      #    - free -h
-     - os: osx
-       python: "2.7"
+     #- os: osx
+     #  python: "2.7"
      #- os: windows
-     - os: freebsd
+     #- os: freebsd
      
      
 #     - os: linux
