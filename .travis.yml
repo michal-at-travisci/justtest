@@ -1,22 +1,21 @@
 language: shell
-os: linux
-dist: 
-  - xenial
+os:
+  -linux
+dist: xenial
 stages:
   name: test
 jobs:
   include:
     - name: job 1
-      if type = pull_request
-      script: 
-      - echo "Hello, job 1"
+      if: type = pull_request
+      script:
+        - echo "Hello, job 1"
     - name: job 2
-      if type = pull_request
-      script: 
-       - echo "Hello, job 2"
-
+      if: type = pull_request
+      script:
+        - echo "Hello, job 2"
 script:
-  - echo "HEllo, root level job here"
+  - echo "Hello, root level job here"
 
 #language: python
 #install: skip
